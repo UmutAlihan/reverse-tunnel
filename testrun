@@ -1,1 +1,3 @@
+#!/bin/bash
+
 ./make-reverse-tunnel.py  --dryrun --serverusername uad --serveraddress 128.19.50.73 --serverhostname uad
