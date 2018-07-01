@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>reverse.uad.uad</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>ssh</string>
+		<string>-NTC</string>
+		<string>-o ServerAliveInterval=60</string>
+		<string>-o ExitOnForwardFailure=yes</string>
+		<string>-i</string>
+		<string>/Users/uad/.ssh/reverse-uad-uad</string>
+		<string>-R 12345:localhost:22</string>
+		<string>uad@128.19.50.73</string>
+	</array>
+	<key>UserName</key>
+	<string>uad</string>
+	<key>RunAtLoad</key>
+	<true/>
+	<key>KeepAlive</key>
+	<true/>
+</dict>
+</plist>

@@ -25,7 +25,7 @@ def replaceInFile(filename, pattern, replacement):
 	for line in fileinput.FileInput(filename, inplace=1):
 		print re.sub(pattern, replacement, line),
 
-systemName = platform.system()
+systemName = "Darwin" 	#platform.system()
 linux = False
 if systemName == 'Linux':
 	print 'Using systemd on Linux'
